@@ -1,0 +1,37 @@
+<form>
+<p>
+<fieldset>
+<legend> Do you have a personal ID? <abbr title=”This field is mandatory” aria-label=”required”> * </abbr> </legend>
+<input type=”radio” required name=”user” id=”r1″ value=”yes”> <label for=”r1″> Yes </label>
+<input type=”radio” required name=”user” id=”r2″ value=”no”> <label for=”r2″> No </label>
+</fieldset>
+</p>
+<p>
+<label for=”n1″> How old are you? </label>
+<input type=”number” min=”8″ max=”95″ step=”1″ id=”n1″ name=”age” pattern=”d+”>
+</p>
+<p>
+<label for=”t1″> What’s your favorite vegetable? <abbr title=”This field is mandatory” aria-label=”required”> * </abbr> </label>
+<input type=”text” id=”t1″ name=”vegetable” list=”l1″ required
+pattern=”[Ll]emon|[Ss]pinach|[Cc]arrot|[Tt]omato|[Pp]otato|[Oo]nion”>
+<datalist id=”l1″>
+<option> Lemon </option>
+<option> Spinach </option>
+<option> Carrot </option>
+<option> Tomato </option>
+<option> Potato </option>
+<option> Onion </option>
+</datalist>
+</p>
+<p>
+<label for=”t2″> Please enter your email address </label>
+<input type=”email” id=”t2″ name=”email”>
+</p>
+<p>
+<label for=”t3″> Leave a brief reply </label>
+<textarea id=”t3″ name=”msg” maxlength=”125″ rows=”4″> </textarea>
+</p>
+<p>
+<button> Submit here </button>
+</p>
+</form>
